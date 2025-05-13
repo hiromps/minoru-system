@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { cn } from "@/lib/utils";
 import { MenuIcon } from "lucide-react";
-import { useAuth } from "@clerk/nextjs";
+import { useAuth, SignInButton, SignUpButton } from "@clerk/nextjs";
 
 const routes = [
   {
@@ -86,12 +86,12 @@ export function SiteHeader() {
               </Button>
             ) : (
               <>
-                <Button variant="outline" asChild>
-                  <Link href="/login">ログイン</Link>
-                </Button>
-                <Button asChild>
-                  <Link href="/register">新規登録</Link>
-                </Button>
+                <SignInButton mode="modal">
+                  <Button variant="outline">ログイン</Button>
+                </SignInButton>
+                <SignUpButton mode="modal">
+                  <Button>新規登録</Button>
+                </SignUpButton>
               </>
             )}
           </div>
@@ -126,12 +126,16 @@ export function SiteHeader() {
                     </Button>
                   ) : (
                     <>
-                      <Button variant="outline" asChild className="w-full">
-                        <Link href="/login">ログイン</Link>
-                      </Button>
-                      <Button asChild className="w-full">
-                        <Link href="/register">新規登録</Link>
-                      </Button>
+                      <SignInButton mode="modal">
+                        <Button variant="outline" className="w-full">
+                          ログイン
+                        </Button>
+                      </SignInButton>
+                      <SignUpButton mode="modal">
+                        <Button className="w-full">
+                          新規登録
+                        </Button>
+                      </SignUpButton>
                     </>
                   )}
                 </div>
