@@ -1,13 +1,13 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Camera, CubeIcon, ImageIcon, Package2Icon } from "lucide-react";
+import { Camera, Box, ImageIcon, Package } from "lucide-react";
 
 const collectionStats = [
   {
     title: "総コレクション数",
     value: "256",
-    icon: <Package2Icon className="h-4 w-4 text-muted-foreground" />,
+    icon: <Package className="h-4 w-4 text-muted-foreground" />,
   },
   {
     title: "登録済み写真",
@@ -17,7 +17,7 @@ const collectionStats = [
   {
     title: "保管ケース数",
     value: "32",
-    icon: <CubeIcon className="h-4 w-4 text-muted-foreground" />,
+    icon: <Box className="h-4 w-4 text-muted-foreground" />,
   },
   {
     title: "未撮影アイテム",

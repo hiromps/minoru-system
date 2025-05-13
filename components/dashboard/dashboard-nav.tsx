@@ -18,7 +18,9 @@ import {
   Box,
   Truck,
   Palette,
-  Cube,
+  LayoutDashboard,
+  ShoppingCart,
+  Package,
 } from "lucide-react";
 
 type NavItem = {

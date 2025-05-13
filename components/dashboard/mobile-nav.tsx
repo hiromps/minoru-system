@@ -5,7 +5,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import {
-  BoxIcon,
   ChevronDown,
   Factory,
   Home,
@@ -19,7 +18,6 @@ import {
   Box,
   Truck,
   Palette,
-  Cube,
   X,
 } from "lucide-react";
 

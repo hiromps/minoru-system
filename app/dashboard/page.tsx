@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from 'framer-motion'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { DashboardShell } from "@/components/dashboard/dashboard-shell";
 import { DashboardHeader } from "@/components/dashboard/dashboard-header";
@@ -9,11 +8,6 @@ import { RecentOrders } from "@/components/dashboard/recent-orders";
 import { InventoryStatus } from "@/components/dashboard/inventory-status";
 import { ProductionSchedule } from "@/components/dashboard/production-schedule";
 
-export function AnimatedBox() {
-  return (
-    <motion.div animate={{ x: 100 }} />
-  )
-}
 export default function DashboardPage() {
   return (
     <DashboardShell>
